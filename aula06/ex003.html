@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis e window.prompt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Já me livrei da maldição!</p>
+       <script>
+            // Sem converter para numero, esse comando recebe automaticamente como string
+            window.alert('Vamos concatenar números!')
+            var num1 = (window.prompt('Digite um número: '))
+            var num2 = (window.prompt('Digite outro número: '))
+            var soma = num1 + num2
+            window.alert('Resultado: ' + soma)
+
+            // Para receber inteiros
+            window.alert('Vamos somar inteiros!')
+            var num1 = Number.parseInt(window.prompt('Digite um número: '))
+            var num2 = Number.parseInt(window.prompt('Digite outro número: '))
+            var soma = num1 + num2
+            window.alert('Resultado: ' + soma)
+
+            // Para receber doubles
+            window.alert('Vamos somar doubles!')
+            var num1 = Number.parseFloat(window.prompt('Digite um número: '))
+            var num2 = Number.parseFloat(window.prompt('Digite outro número: '))
+            var soma = num1 + num2
+            window.alert('Resultado: ' + soma)
+
+            // Recebe automaticamente o tipo certo, inteiro ou double
+            window.alert('Vamos somar inteiros e doubles!')
+            var num1 = Number(window.prompt('Digite um número: '))
+            var num2 = Number(window.prompt('Digite outro número: '))
+            var soma = num1 + num2
+            window.alert('Resultado: ' + soma)
+
+            // Converter número para string
+            window.alert('Vamos converter a soma para string!')
+            var num1 = Number(window.prompt('Digite um número: '))
+            var num2 = Number(window.prompt('Digite outro número: '))
+            var soma = num1 + num2
+            window.alert('Resultado: ' + String(soma)) // ou soma.tostring
+
+            window.confirm('Outro assunto: template de strings')
+            var idade = 20
+            // Template de strings | ao invés de ('Gustavo tem' + idade + 'anos')
+            // Fazemos...
+            window.alert(`Gustavo tem ${idade} anos!`)
+
+            window.alert('Vamos somar inteiros e doubles!')
+            var num1 = Number(window.prompt('Digite um número: '))
+            var num2 = Number(window.prompt('Digite outro número: '))
+            var soma = num1 + num2
+            window.alert(`Soma entre ${num1} e ${num2}: ${soma}`)
+       </script>
+</body>
+</html>
