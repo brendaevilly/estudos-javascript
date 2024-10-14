@@ -22,6 +22,11 @@
         document.write(`</br> Seu salário: ${salario.toFixed(2)}`)
         //aumenta duas casas e troca ponto por vírgula
         document.write(`</br> Seu salário: ${salario.toFixed(2).replace('.',',')}`)
+        //string localizada por parte do mundo
+        //exemplo 1
+        salario.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+        //exemplo 2
+        salario.toLocaleString('pt-br',{style: 'currency', currency: 'USD'})
     </script>
 </body>
 </html>
