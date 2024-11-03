@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições em JavaScript</title>
+    <style>
+        body{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: linear-gradient(to bottom, black, rgb(42, 134, 86), rgb(47, 166, 104), rgb(16, 236, 123))
+        }
+        main{
+            background-color: rgb(16, 236, 123);
+            height: 400px;
+            width: 600px;
+            padding-top: 40px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bolder;
+            text-align: center;
+            box-shadow: 4px 4px rgba(0, 0, 0, 0.047);
+        }
+        main > h1{
+            margin-bottom: 80px;
+        }
+
+        main > input#textovel{
+            height: 40px;
+            width: 200px;
+            border-style: none;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+            box-shadow: 2px 2px rgba(0, 0, 0, 0.181);
+        }
+        main > input#butt{
+            height: 40px;
+            width: 100px;
+            background-color: black;
+            color: rgb(16, 236, 123);
+            font-size: 15px;
+            font-weight: bold;
+            border-style: none;
+            border-radius: 5px;
+            box-shadow: 2px 2px rgba(0, 0, 0, 0.181);
+        }
+        main > input#butt:hover{
+            color: rgb(26, 188, 104);
+        }
+
+        main > div#res{
+            padding-top: 50px;
+            font-size: 25px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Verificar Velocidade</h1>
+        Velocidade <input type="number" name="txtvel" id="textovel"> km/h
+        <input type="button" value="Verificar" onclick="verificar()" id="butt">
+        <div id="res"></div>
+    </main>
+
+    <script> 
+        function verificar(){
+            var vel = document.querySelector('input#textovel')
+            var resul = document.querySelector('div#res')
+            var veloc = Number(vel.value)
+            resul.innerHTML = `Sua velocidade é de <strong>${veloc}</strong> km/h!`
+
+            if(veloc > 60){
+                resul.innerHTML += ` Você foi <strong>multado!</strong>`
+            }else{
+                resul.innerHTML += ` Continue seguindo as leis de transito!`
+            }
+        }
+            
+    </script>    
+</body>
+</html>
