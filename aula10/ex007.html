@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to bottom, aqua, rgb(29, 160, 160), rgb(22, 41, 41));
+            min-height: 100vh;
+        }
+
+        main{
+            background-color: black;
+            color: white;
+            width: 600px;
+            height: 500px;
+            text-align: center;
+            padding: 30px;
+            margin-top: 65px;
+            border-radius: 25px;
+        }
+
+        main > h1{
+            font-size: 40px;
+        }
+
+        main > input{
+            margin-top: 40px;
+            border-radius: 5px;
+            height: 50px;
+            width: 150px;
+            border-color: rgb(0, 136, 136);
+            border-width: 3px;
+            border-style: solid ;
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        main > input#botao{
+            display: block;
+            margin-top: 20px;
+            margin-left: 225px;
+            border-radius: 20px;
+            border-width: 0;
+            font-size: 20px;
+            font-weight: bolder;
+            background-color: aqua;
+        }
+
+        main > div{
+            padding-top: 50px;
+            font-size: 3em;
+            font-weight: bolder;
+            color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Calculadora de Soma</h1>
+
+        <input type="number" name="texn1" id="tn1">
+        +
+        <input type="number" name="texn2" id="tn2">
+        <input type="button" value="Somar" id="botao" onclick="somar()">
+        <div id="result">Resultado</div>
+
+    </main>
+    <script>
+        function somar(){
+            var texton1 = document.querySelector('input#tn1')
+            var texton2 = document.querySelector('input#tn2')
+            var resultado = document.querySelector('div#result')
+
+            var n1 = Number(texton1.value)
+            var n2 = Number(texton2.value)
+            var soma = n1 + n2
+
+            resultado.innerHTML = `Resultado: ${soma}`
+        }
+           
+
+    </script>
+</body>
+</html>
