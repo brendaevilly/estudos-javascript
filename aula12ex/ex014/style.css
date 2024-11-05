@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, rgb(27, 27, 27), grey);
+}
+
+header{
+    text-align: center;
+    color: rgb(172, 165, 165);
+}
+section{
+    background-color: rgb(96, 95, 95);
+    color: rgb(172, 165, 165);
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 7px rgb(73, 73, 73);
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    font-style: italic;
+    color: rgb(172, 165, 165);
+}
+
+section > div > img{
+    width: 250px;
+}
+section > div#msg{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
