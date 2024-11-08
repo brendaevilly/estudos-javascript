@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(27, 27, 27);
+}
+
+header{
+    text-align: center;
+    color: rgb(172, 165, 165);
+}
+section{
+    background-color: rgb(33, 33, 33);
+    color: rgb(172, 165, 165);
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 7px rgb(73, 73, 73);
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    font-style: italic;
+    color: rgb(172, 165, 165);
+}
+
+p > input#anonasc{
+    height: 45px;
+    width: 300px;
+    padding-left: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-style: none;
+    margin-bottom: 30px;
+}
+
+label{
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+input[type = "radio"]{
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+}
+
+input#but{
+    background-color: rgb(228, 220, 220);
+    border-style: none;
+    height: 35px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(78, 73, 73);
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 2px 2px 7px rgba(190, 183, 183, 0.321);
+}
+
+input#but:hover{
+    color: rgb(123, 83, 26);
+}
+
+div#res{
+    margin: 30px;
+    font-size: 28px;
+}
