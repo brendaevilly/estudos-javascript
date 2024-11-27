@@ -26,3 +26,29 @@ footer{
     font-style: italic;
     color: rgb(172, 165, 165);
 }
+
+input{
+    height: 30px;
+    width: 200px;
+    border-radius: 7px;
+    border-style: none;
+}
+input#but{
+    width: 80px;
+    height: 33px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(38, 133, 133);
+}
+p{
+    font-size: 20px;
+}
+
+select{
+    width: 370px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(203, 245, 245);
+}
